@@ -46,7 +46,8 @@ function game() {
                 computer++;
             }
         } else {
-            alert("This is not a valid value")
+            alert("This is not a valid value");
+            i--;
         }
     }
 
