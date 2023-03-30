@@ -35,7 +35,6 @@ function game() {
         if (player >= 3 || computer >= 3) {
             break;
         } else {
-            
             const selectionPrompt = prompt("Rock , Paper or Scissors", '');
             const playerSelection = selectionPrompt !=null ?selectionPrompt.toLowerCase():null;
             const computerSelection = getComputerChoice();
