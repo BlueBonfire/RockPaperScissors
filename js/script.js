@@ -36,7 +36,8 @@ function game() {
             break;
         } else {
             
-            const playerSelection = prompt("Rock , Paper or Scissors", '').toLowerCase();
+            const selectionPrompt = prompt("Rock , Paper or Scissors", '');
+            const playerSelection = selectionPrompt !=null ?selectionPrompt.toLowerCase():null;
             const computerSelection = getComputerChoice();
             console.log(computerSelection);
             if (playerSelection == 'rock' || playerSelection == 'paper' || playerSelection == 'scissor') {
